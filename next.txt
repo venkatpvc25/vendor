@@ -1,0 +1,8 @@
+1️⃣ Admin approve vendor flow
+2️⃣ Product CRUD (vendor-owned)
+3️⃣ Cart + Order flow
+4️⃣ API Gateway & service split prep
+3️⃣ Cart + Order lifecycle
+4️⃣ Public product browsing (user side)
+5️⃣ Inventory & stock locking
+6️⃣ Event-based design (Order → Inventory)
