@@ -5,7 +5,6 @@ import com.pvc.vendor.product.dto.ProductRequest;
 import com.pvc.vendor.product.dto.ProductResponse;
 import com.pvc.vendor.product.port.VendorAccessPort;
 import com.pvc.vendor.product.repo.ProductRepository;
-import com.pvc.vendor.vendor.domain.Vendor;
 import org.springframework.stereotype.Service;
 
 import java.time.Instant;

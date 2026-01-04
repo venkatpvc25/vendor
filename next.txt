@@ -6,3 +6,8 @@
 4️⃣ Public product browsing (user side)
 5️⃣ Inventory & stock locking
 6️⃣ Event-based design (Order → Inventory)
+
+
+8️⃣ Idempotency keys & retry safety (payments + orders)
+9️⃣ Observability: logs, tracing, metrics
+🔟 Hardening security (mTLS, rate limits)

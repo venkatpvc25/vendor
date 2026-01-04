@@ -19,7 +19,9 @@ public class SecurityConfig {
             "/auth/**",
             "/v3/api-docs/**",
             "/swagger-ui/**",
-            "/swagger-ui.html"
+            "/swagger-ui.html",
+            "/actuator/health",
+            "/actuator/**"
     };
 
     public SecurityConfig(JwtAuthFilter jwtFilter) {
@@ -30,6 +32,7 @@ public class SecurityConfig {
     SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
                 .csrf(csrf -> csrf.disable())
+                .cors(cors -> cors.disable())
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(allowedPaths).permitAll()
                         .requestMatchers("/admin/**").hasRole("ADMIN")
