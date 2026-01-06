@@ -14,12 +14,12 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: create   # 🔥 AUTO CREATE TABLES
-    show-sql: true
+      ddl-auto: none   # 🔥 AUTO CREATE TABLES
     properties:
       hibernate:
         format_sql: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
+    
 
   flyway:
     enabled: false       # 🔥 DISABLE FLYWAY FOR NOW
